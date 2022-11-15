@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .active {
+    @apply font-bold;
+  }
+  .btn-primary {
+    @apply bg-primary rounded-custom text-white shadow-primary;
+  }
+  .btn-secondary {
+    @apply text-primary outline outline-1 outline-primary rounded-custom;
+  }
+  .heading {
+    @apply font-bold text-heading;
+  }
+  .section-tag {
+    @apply text-primary mb-[10px] font-medium text-[18px];
+  }
+  .section-title {
+    @apply heading text-4xl leading-[48px] mb-4;
+  }
+  .section-description {
+    @apply text-paragraph font-normal text-[16px] leading-7 mb-9;
+  }
+  .list-bullet {
+    @apply before:w-2 before:h-2 before:bg-primary before:rounded-full before:outline before:outline-[5px] before:outline-primary/10 before:content-[''] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-5 ml-6;
+  }
+  .link-header {
+    @apply font-medium text-xl leading-5 mb-[22px];
+  }
+  .link-item {
+    @apply text-[#E7E7E7] leading-[46px] hover:font-semibold;
+  }
+}
