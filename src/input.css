@@ -7,10 +7,13 @@
     @apply font-bold;
   }
   .btn-primary {
-    @apply bg-primary rounded-custom text-white shadow-primary;
+    @apply rounded-custom bg-primary text-white shadow-primary;
   }
   .btn-secondary {
-    @apply text-primary outline outline-1 outline-primary rounded-custom;
+    @apply rounded-custom text-primary outline outline-1 outline-primary;
+  }
+  button.active {
+    @apply rounded-custom bg-primary text-white shadow-primary font-semibold;
   }
   .heading {
     @apply font-bold text-heading;
@@ -32,5 +35,23 @@
   }
   .link-item {
     @apply text-[#E7E7E7] leading-[46px] hover:font-semibold;
+  }
+  .hamburger {
+    @apply inline-block cursor-pointer;
+  }
+  .hamburger .bar-1, .hamburger .bar-2, .hamburger .bar-3 {
+    @apply w-9 h-1 bg-primary my-1 mx-0 transition-all rounded-full;
+  }
+  .hamburger.active .bar-1 {
+    @apply translate-y-2 -rotate-45;
+  }
+  .hamburger.active .bar-2 {
+    @apply opacity-0;
+  }
+  .hamburger.active .bar-3 {
+    @apply -translate-y-2 rotate-45;
+  }
+  .dropdown {
+    @apply flex after:content-[url('../assets/img/icons/CaretDown.svg')] after:pl-1.5;
   }
 }
