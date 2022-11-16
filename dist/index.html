@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Netbook</title>
-  <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+  <script src="./scripts/flowbite.js"></script>
 </head>
 <body class="font-inter">
 
-  <nav id="navbar" class="fixed border-b w-full lg:py-3 backdrop-blur z-[9999]">
+  <nav id="navbar" class="fixed border-b w-full lg:py-3 backdrop-blur z-[9999] py-4">
     <div class="container flex flex-wrap items-center gap-x-18 justify-between">
 
       <div class="img-box">
@@ -21,7 +21,7 @@
         </a>
       </div>
 
-      <div class="hidden w-full lg:block order-3 flex-1 basis-full lg:basis-0 h-full duration-500 transition-all py-5 md:py-2 lg:py-0" id="navbar-default">
+      <div class="hidden w-full lg:block order-3 flex-1 basis-full lg:basis-0 h-screen md:h-auto lg:h-auto duration-500 transition-all py-5 md:py-2 lg:py-0" id="navbar-default">
 
         <div class="flex items-center flex-col md:flex-row lg:flex-row justify-between gap-y-5">
 
@@ -31,7 +31,23 @@
                 <a href="#">Home</a>
               </li>
               <li class="dropdown">
-                <a href="#">Community</a>
+                <button id="dropdownDefault" data-dropdown-toggle="dropdown">Community</button>
+                <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 absolute top-6">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">NewsFeed</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Friends</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Forums</a>
+                    </li>
+                  </ul>
+              </div>
               </li>
               <li>
                 <a href="#">Blog</a>
@@ -53,10 +69,10 @@
       </div>
 
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 bg-transparent" aria-controls="navbar-default" aria-expanded="false">
-        <div class="hamburger">
-          <div class="bar-1"></div>
-          <div class="bar-2"></div>
-          <div class="bar-3"></div>
+        <div class="hamburger group">
+          <div class="bar-1 group-hover:bg-black"></div>
+          <div class="bar-2 group-hover:bg-black"></div>
+          <div class="bar-3 group-hover:bg-black"></div>
         </div>
       </button>
       
@@ -133,11 +149,11 @@
   <section id="achievement" class="mb-14">
     <div class="container">
 
-      <div class="flex py-[84px] gap-[92px] justify-center lg:justify-between flex-col lg:flex-row items-center">
+      <div class="flex py-[84px] gap-y-10 justify-center lg:justify-between flex-col lg:flex-row items-center">
 
         <div class="flex gap-6 flex-col md:flex-row lg:flex-row">
 
-          <div class="pl-11 pt-11 pb-10 pr-[18px] rounded-custom border hover:border-transparent hover:shadow-card bg-white transition-all group">
+          <div class="pl-11 pt-11 pb-10 pr-[18px] rounded-custom border hover:border-transparent hover:shadow-card bg-white transition-all group w-full lg:w-[45%]">
 
             <div class="flex gap-[10px] items-center mb-9">
               <img src="./assets/img/icons/Star.svg" alt="Star">
@@ -169,7 +185,7 @@
 
           </div>
 
-          <div class="border rounded-custom pl-11 pt-11 pb-10 pr-[18px] bg-white hover:border-transparent hover:shadow-card transition-all group">
+          <div class="border rounded-custom pl-11 pt-11 pb-10 pr-[18px] bg-white hover:border-transparent hover:shadow-card transition-all group w-full lg:w-[45%]">
 
             <div class="flex items-center gap-[10px] mb-9">
               <img src="./assets/img/icons/Trophy.svg" alt="Trophy">
@@ -194,7 +210,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col md:w-1/2 justify-center">
+        <div class="flex flex-col lg:w-[70%] md:w-1/2 justify-center">
 
           <span class="section-tag">Our Achievement</span>
           <h2 class="section-title mb-[18px]">We are Connecting You The Digital Life.</h2>
@@ -287,7 +303,7 @@
         <h2 class="text-heading font-bold text-4xl leading-[48px] mb-[18px]">Our Active Members</h2>
         <p class="font-normal leading-[26px] text-[#8C8C8C] mb-[38px]">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
 
-        <div id="member-actions" class="flex rounded-custom p-2 bg-primary/10 w-fit mx-auto leading-4 text-heading/80 font-medium">
+        <div id="member-actions" class="flex rounded-custom p-2 bg-primary/10 w-fit mx-auto leading-4 text-heading/80 font-medium flex-col md:flex-row lg:flex-row">
           <button type="button" class="px-7 lg:px-11 py-4.5 hover:btn-primary transition-all">Newst</button>
           <button type="button" class="px-7 lg:px-11 py-4.5 hover:btn-primary transition-all">Popular</button>
           <button type="button" class="px-7 lg:px-11 py-4.5 hover:btn-primary active transition-all">Active</button>
@@ -483,9 +499,9 @@
   <section id="footer" class="bg-[#2B2B39] text-white">
     <footer class="container">
 
-      <div class="flex pt-[74px] gap-5 pb-24 lg:justify-between flex-wrap justify-center">
+      <div class="flex pt-[74px] gap-5 pb-24 lg:justify-between flex-wrap justify-center md:justify-between text-center md:text-left lg:text-left">
 
-        <div class="flex gap-16 flex-wrap">
+        <div class="flex gap-16 flex-wrap justify-center md:justify-start lg:justify-start">
 
           <div>
             <p class="link-header">Home</p>
@@ -565,13 +581,13 @@
 
         </div>
 
-        <div class="w-[340px]">
+        <div class="w-full md:w-[340px] lg:w-[340px]">
           <h3 class="font-medium text-xl leading-8 mb-[18px]">Subscribe Cirkle Newsletter</h3>
           <p class="text-[#E7E7E7] leading-[28px] mb-8">Subscribe to be the first one to know about updates. Enter your email</p>
 
           <div class="rounded-[12px] border">
             <form action="" class="flex justify-between">
-              <input class="bg-transparent py-3 pl-6 w-[212px] border-none" type="text" placeholder="Email Address">
+              <input class="bg-transparent py-3 pl-6 w-full md:w-[212px] lg:w-[212px] border-none" type="text" placeholder="Email Address">
               <button type="submit" class="font-medium text-[#2B2B39] bg-white rounded-[12px] px-6 py-3 placeholder:text-[#717179]">Subscribe</button>
             </form>
           </div>
@@ -585,7 +601,7 @@
   <section id="copyright" class="bg-[#20202D]">
     <div class="container">
 
-      <div class="flex justify-between items-center text-white py-8 flex-wrap">
+      <div class="flex gap-4 justify-between items-center text-white py-8 flex-col md:flex-row lg:flex-row">
         
         <div>
           <span class="text-sm text-[#F6F6F6] font-normal">Besnik Creative Agency.</span>
@@ -611,7 +627,7 @@
         </div>
 
       </div>
-      
+
     </div>
   </section>
 
@@ -620,6 +636,7 @@
   const hamburger = document.querySelector('.hamburger');
   const navbar = document.querySelector('#navbar-default');
   const memberActionButtons = document.querySelectorAll('#member-actions button');
+  // const dropdown = document.querySelector('.dropdown');
   hamburger.addEventListener('click', (e) => {
     hamburger.classList.toggle('active');
     navbar.classList.toggle('hidden');
@@ -630,6 +647,10 @@
       e.target.classList.add('active');
     });
   });
+  // dropdown.querySelector('a').addEventListener('click', (e) => {
+  //   dropdown.querySelector('div').classList.toggle('hidden');
+  //   dropdown.querySelector('div').classList.toggle('show');
+  // });
   function removeMemberActionsActiveState() {
     memberActionButtons.forEach((element) => {
       element.classList.remove('active');
