@@ -1933,24 +1933,6 @@ button.active {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-\[\#FFAF2E\]\/30 {
-  --tw-gradient-from: rgb(255 175 46 / 0.3);
-  --tw-gradient-to: rgb(255 175 46 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#FFAF2E\]\/50 {
-  --tw-gradient-from: rgb(255 175 46 / 0.5);
-  --tw-gradient-to: rgb(255 175 46 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#FFAF2E\]\/40 {
-  --tw-gradient-from: rgb(255 175 46 / 0.4);
-  --tw-gradient-to: rgb(255 175 46 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-\[\#FFAF2E\]\/20 {
   --tw-gradient-from: rgb(255 175 46 / 0.2);
   --tw-gradient-to: rgb(255 175 46 / 0);
@@ -2194,6 +2176,10 @@ button.active {
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
 }
 
 .text-center {
@@ -2808,6 +2794,10 @@ button.active {
     padding-right: 4rem;
   }
 
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2923,6 +2913,14 @@ button.active {
 
   .lg\:pr-16 {
     padding-right: 4rem;
+  }
+
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .lg\:pr-11 {
+    padding-right: 2.75rem;
   }
 
   .lg\:text-left {
