@@ -1692,6 +1692,15 @@ button.active {
   row-gap: 2.5rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-y-7 {
+  row-gap: 1.75rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1956,6 +1965,10 @@ button.active {
 
 .to-\[\#FFAF2E\] {
   --tw-gradient-to: #FFAF2E;
+}
+
+.fill-primary {
+  fill: #217BF4;
 }
 
 .object-contain {
@@ -2755,6 +2768,10 @@ button.active {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:justify-between {
