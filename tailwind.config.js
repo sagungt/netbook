@@ -27,7 +27,8 @@ module.exports = {
       boxShadow: {
         primary: '0px 7px 22px -12px rgba(33, 123, 244, 0.34)',
         thumbnail: '-5px 4px 14px rgba(151, 151, 151, 0.28)',
-        card: '0px 26px 49px rgba(146, 165, 184, 0.14)'
+        card: '0px 26px 49px rgba(146, 165, 184, 0.14)',
+        icon: '0px 10px 22px -10px transparent'
       },
       spacing: {
         '4.5': '1.125rem', /* 18px */
