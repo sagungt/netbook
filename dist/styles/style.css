@@ -1096,7 +1096,7 @@ button.active {
   width: 1.5rem;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(33 123 244 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1104,17 +1104,13 @@ button.active {
 
 .hamburger.active .bar-1 {
   --tw-translate-y: 0.5rem;
-  --tw-rotate: -45deg;
+  --tw-rotate: -60deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hamburger.active .bar-2 {
-  opacity: 0;
 }
 
 .hamburger.active .bar-3 {
   --tw-translate-y: -0.5rem;
-  --tw-rotate: 45deg;
+  --tw-rotate: 60deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1390,6 +1386,10 @@ button.active {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -1400,6 +1400,10 @@ button.active {
 
 .h-auto {
   height: auto;
+}
+
+.h-\[66px\] {
+  height: 66px;
 }
 
 .h-\[160px\] {
@@ -1441,6 +1445,10 @@ button.active {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[66px\] {
+  width: 66px;
 }
 
 .w-\[160px\] {
@@ -1636,8 +1644,8 @@ button.active {
   gap: 2.75rem;
 }
 
-.gap-\[12px\] {
-  gap: 12px;
+.gap-\[36px\] {
+  gap: 36px;
 }
 
 .gap-\[30px\] {
@@ -1749,6 +1757,14 @@ button.active {
   border-radius: 9999px;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-\[100\%\] {
+  border-radius: 100%;
+}
+
 .rounded-\[12px\] {
   border-radius: 12px;
 }
@@ -1831,6 +1847,11 @@ button.active {
   background-color: rgb(229 240 253 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFAF2E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 175 46 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#2B2B39\] {
   --tw-bg-opacity: 1;
   background-color: rgb(43 43 57 / var(--tw-bg-opacity));
@@ -1894,6 +1915,24 @@ button.active {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#5CA1FE\]\/60 {
+  --tw-gradient-from: rgb(92 161 254 / 0.6);
+  --tw-gradient-to: rgb(92 161 254 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#FF858A\]\/60 {
+  --tw-gradient-from: rgb(255 133 138 / 0.6);
+  --tw-gradient-to: rgb(255 133 138 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#FFD085\]\/60 {
+  --tw-gradient-from: rgb(255 208 133 / 0.6);
+  --tw-gradient-to: rgb(255 208 133 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-indigo-50 {
   --tw-gradient-to: rgb(240 245 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #F0F5FF, var(--tw-gradient-to);
@@ -1905,6 +1944,18 @@ button.active {
 
 .to-indigo-100\/5 {
   --tw-gradient-to: rgb(229 237 255 / 0.05);
+}
+
+.to-\[\#217BF4\] {
+  --tw-gradient-to: #217BF4;
+}
+
+.to-\[\#F04148\] {
+  --tw-gradient-to: #F04148;
+}
+
+.to-\[\#FFAF2E\] {
+  --tw-gradient-to: #FFAF2E;
 }
 
 .object-contain {
@@ -2093,8 +2144,8 @@ button.active {
   padding-bottom: 80px;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .pr-6 {
@@ -2115,6 +2166,10 @@ button.active {
 
 .pb-24 {
   padding-bottom: 6rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .text-center {
@@ -2357,6 +2412,12 @@ button.active {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2367,12 +2428,6 @@ button.active {
 
 .transition-opacity {
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-transform {
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2519,15 +2574,38 @@ button.active {
   --tw-ring-color: rgb(164 202 254 / var(--tw-ring-opacity));
 }
 
+.group:hover .group-hover\:mt-0 {
+  margin-top: 0px;
+}
+
+.group:hover .group-hover\:h-10 {
+  height: 2.5rem;
+}
+
+.group:hover .group-hover\:translate-x-3 {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-1\.5 {
+  --tw-translate-x: 0.375rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-1 {
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:scale-\[110\%\] {
   --tw-scale-x: 110%;
   --tw-scale-y: 110%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:bg-black {
+.group:hover .group-hover\:bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(33 123 244 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:stroke-primary {
@@ -2671,6 +2749,10 @@ button.active {
     flex-wrap: wrap;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
   }
@@ -2769,6 +2851,10 @@ button.active {
 
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:justify-start {

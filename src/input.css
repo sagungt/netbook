@@ -40,16 +40,13 @@
     @apply inline-block cursor-pointer;
   }
   .hamburger .bar-1, .hamburger .bar-2, .hamburger .bar-3 {
-    @apply w-6 h-1 bg-primary my-1 mx-0 transition-all rounded-full;
+    @apply w-6 h-1 bg-black my-1 mx-0 transition-all rounded-full;
   }
   .hamburger.active .bar-1 {
-    @apply translate-y-2 -rotate-45;
-  }
-  .hamburger.active .bar-2 {
-    @apply opacity-0;
+    @apply translate-y-2 -rotate-[60deg];
   }
   .hamburger.active .bar-3 {
-    @apply -translate-y-2 rotate-45;
+    @apply -translate-y-2 rotate-[60deg];
   }
   .dropdown {
     @apply relative after:absolute after:top-1/2 after:-right-[10px] after:-translate-y-1/2 flex after:content-[url('../assets/img/icons/CaretDown.svg')] after:pl-1.5;
