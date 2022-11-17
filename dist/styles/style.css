@@ -1302,10 +1302,6 @@ button.active {
   margin-bottom: 38px;
 }
 
-.-mt-\[10px\] {
-  margin-top: -10px;
-}
-
 .mb-\[46px\] {
   margin-bottom: 46px;
 }
@@ -1856,11 +1852,6 @@ button.active {
   background-color: rgb(229 240 253 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FFAF2E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 175 46 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#2B2B39\] {
   --tw-bg-opacity: 1;
   background-color: rgb(43 43 57 / var(--tw-bg-opacity));
@@ -1942,6 +1933,30 @@ button.active {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#FFAF2E\]\/30 {
+  --tw-gradient-from: rgb(255 175 46 / 0.3);
+  --tw-gradient-to: rgb(255 175 46 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#FFAF2E\]\/50 {
+  --tw-gradient-from: rgb(255 175 46 / 0.5);
+  --tw-gradient-to: rgb(255 175 46 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#FFAF2E\]\/40 {
+  --tw-gradient-from: rgb(255 175 46 / 0.4);
+  --tw-gradient-to: rgb(255 175 46 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#FFAF2E\]\/20 {
+  --tw-gradient-from: rgb(255 175 46 / 0.2);
+  --tw-gradient-to: rgb(255 175 46 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-indigo-50 {
   --tw-gradient-to: rgb(240 245 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #F0F5FF, var(--tw-gradient-to);
@@ -1965,10 +1980,6 @@ button.active {
 
 .to-\[\#FFAF2E\] {
   --tw-gradient-to: #FFAF2E;
-}
-
-.fill-primary {
-  fill: #217BF4;
 }
 
 .object-contain {
@@ -2621,6 +2632,10 @@ button.active {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:border-none {
+  border-style: none;
+}
+
 .group:hover .group-hover\:bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(33 123 244 / var(--tw-bg-opacity));
@@ -2777,10 +2792,6 @@ button.active {
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:py-2 {
